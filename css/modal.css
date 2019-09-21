@@ -1,0 +1,187 @@
+.modal {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    position: absolute;
+    display: none;
+  }
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 134, 99);
+    padding: 0 15px 0 15px;
+    border-radius: 10px 10px 0 0;
+  }
+  .modal-header__location {
+    font-family: 'FiraSans';
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .modal-header__mark {
+    display: block;
+    width: 8px;
+    height: 14px;
+  }
+  .modal-header__close {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    cursor: pointer;
+  }
+  .modal-header__close:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    background-color: rgb(255, 255, 255);
+  }
+  .modal-header__close:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: rgb(255, 255, 255);
+  }
+  .modal-comments {
+    height: 150px;
+    overflow-y: scroll;
+    background-color: rgb(255, 255, 255);
+    padding: 15px 15px 0px 15px;
+  }
+
+  .modal-comments__comment {
+    margin-bottom: 20px;
+  }
+  
+  .modal-comments__comment-empty {
+    font-family: 'FiraSans';
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    display: block;
+  }
+  .modal-comments__comment-info {
+    display: flex;
+    align-items: center;
+  }
+  .modal-comments__comment-info--name {
+    font-family: 'FiraSans';
+    font-size: 16px;
+    color: rgb(79,79,79);
+    font-weight: 600;
+    display: block;
+  }
+  .modal-comments__comment-info--place {
+    font-family: 'FiraSans';
+    font-size: 16px;
+    color: rgb(126,126,126);
+    font-weight: normal;
+    display: block;
+    margin-left: 10px;
+  }
+  .modal-comments__comment-info--date {
+    font-family: 'FiraSans';
+    font-size: 10px;
+    color: rgb(126,126,126);
+    font-weight: normal;
+    display: block;
+    margin-left: 10px;
+  }
+  .modal-comments__text {
+    border: 1px solid rba(196,196,196);
+    border-radius: 10px;
+    font-family: 'FiraSans';
+    font-size: 15px;
+    color: rgb(126,126,126);
+    font-weight: 400;
+    display: block;
+    margin: 0px;
+    font-style: italic;
+  }
+  .modal-comment {
+    padding: 0 15px 15px 15px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 0 0 15px 15px;
+  }
+  .modal-comment__form {
+    text-align: right;
+    position: relative;
+  }
+  .modal-comment__title {
+    padding: 10px 0 0 0;
+    text-transform: uppercase;
+    font-family: 'FiraSans';
+    font-size: 16px;
+    color: rgb(255, 134, 99);
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-top: 0px;
+  }
+  .modal-comment__name {
+    width: 95%;
+    border-radius: 20px;
+    border: 1px solid rgb(196, 196, 196);
+    font-family: 'FiraSans';
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+    padding: 10px;
+    outline: none;
+    margin-bottom: 15px;
+  }
+  .modal-comment__place {
+    width: 95%;
+    border-radius: 20px;
+    border: 1px solid rgb(196, 196, 196);
+    font-family: 'FiraSans';
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+    padding: 10px;
+    outline: none;
+    margin-bottom: 15px;
+  }
+  .modal-comment__desc {
+    width: 95%;
+    border-radius: 20px;
+    border: 1px solid rgb(196, 196, 196);
+    font-family: 'FiraSans';
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+    padding: 10px;
+    outline: none;
+    margin-bottom: 15px;
+  }
+  .modal-comment__btn {
+    border-radius: 15px;
+    font-family: 'FiraSans';
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: rgb(255, 134, 99);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .modal-active {
+    display: block;
+  }
