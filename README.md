@@ -1,2 +1,3 @@
 # geo-review
-home work tasks by course
+Geo review
+
